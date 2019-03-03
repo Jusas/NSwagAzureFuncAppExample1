@@ -43,7 +43,7 @@ namespace HttpExtensionsExamples.Startup
                         NameClaimType = ClaimTypes.NameIdentifier
                     },
                     // Dummy authorization filter, ie. doesn't really do anything, everything goes.
-                    AuthorizationFilter = async (principal, token, attributes) => { }
+                    CustomAuthorizationFilter = async (principal, token, attributes) => { }
                 };
             });
         }
